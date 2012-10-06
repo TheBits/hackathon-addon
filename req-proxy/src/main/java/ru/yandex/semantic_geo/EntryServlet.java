@@ -83,6 +83,7 @@ public class EntryServlet extends HttpServlet {
             }
             JSONArray rr = new JSONArray(results);
             resp.setCharacterEncoding("utf-8");
+            resp.setContentType("application/json");
             PrintWriter pw = resp.getWriter();
             pw.print(rr.toString());
             pw.close();
