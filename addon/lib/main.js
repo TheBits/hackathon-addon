@@ -5,5 +5,11 @@ var pageMod = require("page-mod");
 pageMod.PageMod({
   include: '*',
   contentScriptWhen: 'end',
-  contentScriptFile: data.url('inject.js')
+  contentScriptFile: data.url('inject.js'),
+  onAttach: function(worker) {
+    worker.port.on('content', function(content) {
+      // Получить контент страницы
+      console.log(JSON.stringify(content));
+    });
+  }
 });

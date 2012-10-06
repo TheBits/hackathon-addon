@@ -1,9 +1,8 @@
 // Файл работает в контексте веб-страницы
 
-// функция проходит все дерево
+// Получает текстовые данные из DOM
 var result = [];
 var root = document.body;
-
 var node = root.childNodes[0];
 while(node != null) {
     if (node.nodeType == Node.TEXT_NODE) {
@@ -20,7 +19,5 @@ while(node != null) {
     }
 }
 
-result.forEach(function(r) {
-    console.log("!!!");
-    console.log(r);
-});
+//Отправляет текстовые данные в аддон
+self.port.emit('content', result);
