@@ -1,8 +1,18 @@
 {
-  "name": "addon",
-  "fullName": "addon",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
-  "version": "0.1"
+    "preferences": [
+        {
+            "description": "No description", 
+            "type": "string", 
+            "name": "service_url", 
+            "value": "http://127.0.0.1:8000/", 
+            "title": "Backend URL"
+        }
+    ], 
+    "name": "yana_addon", 
+    "license": "MPL 2.0", 
+    "author": "", 
+    "version": "0.1", 
+    "fullName": "Yana addon", 
+    "id": "jid1-ELx6fnB6PoEOVQ", 
+    "description": "Hackcathon work"
 }
