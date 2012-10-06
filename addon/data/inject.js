@@ -2,6 +2,7 @@
 
 self.port.on('result', function(message) {
     console.log('message', message);
+    var messages = JSON.parse(message);
 });
 
 // Получает текстовые данные из DOM
