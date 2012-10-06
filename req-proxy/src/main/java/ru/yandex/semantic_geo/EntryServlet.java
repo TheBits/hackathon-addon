@@ -59,11 +59,11 @@ public class EntryServlet extends HttpServlet {
             OutputStream os = connection.getOutputStream();
             os.write(toDetect.getBytes(Charset.forName("UTF-8")));
             os.close();
+            JSONTokener tokener1 = new JSONTokener(connection.getInputStream());
+            JSONArray trans = new JSONArray(tokener1);
             long time = System.currentTimeMillis();
             log("Extracted entities in "+(time-startTime)+" ms");
             startTime=time;
-            JSONTokener tokener1 = new JSONTokener(connection.getInputStream());
-            JSONArray trans = new JSONArray(tokener1);
             ArrayList<JSONArray> results = new ArrayList<JSONArray>(ar.length());
             for (int i = 0; i < ar.length(); i++) {
                 results.add(new JSONArray());
