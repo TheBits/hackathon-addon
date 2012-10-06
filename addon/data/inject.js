@@ -3,6 +3,26 @@
 self.port.on('result', function(message) {
     console.log('message', message);
     var messages = JSON.parse(message);
+
+    var index = 0;
+    var root = document.body;
+    var node = root.childNodes[0];
+    while(node != null) {
+        if (node.nodeType == Node.TEXT_NODE) {
+            var data = message[index];
+            index += 1;
+            // node.textContent;
+        }
+
+        if (node.hasChildNodes()  && node.tagName !== 'SCRIPT') {
+            node = node.firstChild;
+        } else {
+            while(node.nextSibling == null && node != root) {
+                node = node.parentNode;
+            }
+            node = node.nextSibling;
+        }
+    }
 });
 
 // Получает текстовые данные из DOM
