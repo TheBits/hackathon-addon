@@ -9,7 +9,7 @@ while(node != null) {
         result.push(node.textContent);
     }
 
-    if(node.hasChildNodes()) {
+    if (node.hasChildNodes()  && node.tagName !== 'SCRIPT') {
         node = node.firstChild;
     } else {
         while(node.nextSibling == null && node != root) {
