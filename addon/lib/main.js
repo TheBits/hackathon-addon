@@ -14,8 +14,7 @@ pageMod.PageMod({
         Request({
           url: prefs.service_url,
           onComplete: function (response) {
-            worker.
-            console.log(response.text);
+            worker.port.emit('result', response.text);
           } 
         }).get();
     });

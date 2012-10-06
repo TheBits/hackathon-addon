@@ -1,5 +1,9 @@
 // Файл работает в контексте веб-страницы
 
+self.port.on('result', function(message) {
+    console.log('message', message);
+});
+
 // Получает текстовые данные из DOM
 var result = [];
 var root = document.body;
