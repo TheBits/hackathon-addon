@@ -1,4 +1,6 @@
 var data = require("self").data;
+var prefs = require("simple-prefs").prefs;
+var Request = require("request").Request;
 var pageMod = require("page-mod");
 
 // Встроить свой обработчик в веб-страницу
@@ -9,7 +11,13 @@ pageMod.PageMod({
   onAttach: function(worker) {
     worker.port.on('content', function(content) {
       // Получить контент страницы
-      console.log(JSON.stringify(content));
+        Request({
+          url: prefs.service_url,
+          onComplete: function (response) {
+            worker.
+            console.log(response.text);
+          } 
+        }).get();
     });
   }
 });
