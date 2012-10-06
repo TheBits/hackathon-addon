@@ -1,9 +1,34 @@
-[
-    {
-        "start": 0,
-        "length": 7,
-        "mid": "freebase id",
-        "image": "http:/example.com/img.png",
-        "article": "Lorem ipsum dollor"
-    }
-]
+[{
+ "number":2,
+ "start":100,
+ "length":10,
+    "image": "http://img.freebase.com/api/trans/image_thumb/m/02cn_kt?errorid=%2Ffreebase%2Fno_image_png&maxheight=200&mode=fit&maxwidth=150",
+    "area": 1213.4,
+    "containedby": [
+      {
+        "url":  "http://freebase.com/view/m/059rby",
+        "name": "New York"
+      },
+      {
+        "url":  "http://freebase.com/view/m/09c7w0",
+        "name": "United States of America"
+      }
+    ],
+    "/location/location/contains": [
+      {
+        "url":  "http://freebase.com/view/m/042y7j",
+        "name": "Plaza Hotel"
+      },
+      {
+        "url":  "http://freebase.com/view/m/067kx1",
+        "name": "African Burial Ground National Monument"
+      }
+    ],
+    "geolocation": {
+      "latitude":  40.7142,
+      "longitude": -74.0064
+    },
+    "population": 8244910,
+    "name": "New York City",
+    "url": "http://freebase.com/view/m/02_286"  
+}]
