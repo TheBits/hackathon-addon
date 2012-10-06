@@ -1,26 +1,5 @@
 [
 [],
-// [{
-//     "text":"Kaluga (Russian: Калу́га; IPA: [kɐˈlugə]) is a city and the administrative center of Kaluga Oblast, Russia, located on the Oka River 150 kilometers (93 mi) southwest of Moscow. Population: 325,185...",
-//     "attrs": 
-//     {
-//         "area":null,
-//         "geolocation":{
-//             "longitude":36.2666666667,"latitude":54.5333333333
-//         },
-//         "name":"Kaluga",
-//         "contains":[],
-//         "containedby":[
-//             {
-//                 "name":"Russia","mid":"/m/06bnz"
-//             },{
-//                 "name":"Kaluga Oblast","mid":"/m/02dvrj"
-//             }
-//         ],
-//         "population":334751
-//     },
-//     "image":"http://img.freebase.com/api/trans/image_thumb/m/02cn_kt?maxheight=200&mode=fit&maxwidth=150,","mid":"/m/0233n3","url":"http://freebase.com/view/m/0233n3"
-// }],
 [{
  "number":2,
  "start":100,
