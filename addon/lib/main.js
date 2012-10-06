@@ -13,10 +13,12 @@ pageMod.PageMod({
       // Получить контент страницы
         Request({
           url: prefs.service_url,
+          content: JSON.stringify(content),
+          contentType: "application/json",
           onComplete: function (response) {
             worker.port.emit('result', response.text);
           } 
-        }).get();
+        }).get(); // Поменять на POST
     });
   }
 });
