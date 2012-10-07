@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ru.yandex.semantic_geo.freebase.FreebaseAPITest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.982 sec
