@@ -47,7 +47,7 @@ self.port.on('result', function(message) {
                     content.substr(0, item['start']),
                     '<span class="yana-highlight">',
                     content.substr(item['start'], item['length']),
-                    '<span><img style="float:left" src="'+item['data']['image']+'">'+item['data']['text']+'</span>',
+                    '<span><img src="'+item['data']['image']+'">'+item['data']['text']+'</span>',
                     '</span>',
                     content.substr(item['length']+item['start'], content.length)
                 ].join(' ');
