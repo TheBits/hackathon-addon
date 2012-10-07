@@ -4,7 +4,7 @@
             "description": "No description", 
             "type": "string", 
             "name": "service_url", 
-            "value": "http://127.0.0.1:8000/data.json",
+            "value": "http://rasifiel.people.yandex.net/semantic_geo/entry",
             "title": "Backend URL"
         }
     ], 
