@@ -10,17 +10,20 @@ pageMod.PageMod({
   contentScriptFile: data.url('inject.js'),
   contentStyle: [
     // "span.yana-expand { padding: 0; margin 0}",
-    ".yana-highlight { text-decoration: underline }",
+    ".yana-highlight { text-decoration: underline; }",
     ".yana-highlight span {\
       background-color: #FFFF73;\
       border-radius: 5px;\
       display: none;\
       opacity: 0.9;\
       padding: 10px;\
+      width: 350px;\
       z-index: 100;\
+      text-decoration: none;\
       box-shadow: 0 40px 60px -30px #FFFFFF inset, 0 0 20px rgba(0, 0, 0, 0.2);\
     }",
-    ".yana-highlight:hover span { display: block }"
+    ".yana-highlight span img {float: left; margin-right: 10px}",
+    ".yana-highlight:hover span { display: block; text-decoration: none; }"
   ],
   onAttach: function(worker) {
     worker.port.on('content', function(content) {
