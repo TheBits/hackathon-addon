@@ -42,7 +42,7 @@ public class FreebaseObject {
             JSONObject res = new JSONObject().put("text", text).put("mid", mid);
             if (img_url != null) {
                 res.put("image", "http://img.freebase.com/api/trans/image_thumb" + img_url +
-                        "?maxheight=200&mode=fit&maxwidth=150,");
+                        "?maxheight=200&mode=fit&maxwidth=150");
             }
             res.put("attrs", attrs);
             FreebaseAPI.mid2url(res);
