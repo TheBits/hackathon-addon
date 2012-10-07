@@ -11,14 +11,15 @@ pageMod.PageMod({
   onAttach: function(worker) {
     worker.port.on('content', function(content) {
       // Получить контент страницы
-        Request({
-          url: prefs.service_url,
-          content: JSON.stringify(content),
-          contentType: "application/json",
-          onComplete: function (response) {
-            worker.port.emit('result', response.text);
-          } 
-        }).get(); // Поменять на POST
+      // console.log(JSON.stringify(content));
+      Request({
+        url: prefs.service_url,
+        content: JSON.stringify(content),
+        contentType: "application/json",
+        onComplete: function (response) {
+          worker.port.emit('result', response.text);
+        }
+      }).post();
     });
   }
 });
